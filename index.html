@@ -73,7 +73,7 @@
         }
         .marquee-text { 
             display: inline-block; white-space: nowrap; 
-            animation: geser 10s linear infinite; 
+            animation: geser 30s linear infinite; 
             color: rgb(4, 240, 248); font-weight: bold; 
         }
         @keyframes geser { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
@@ -170,7 +170,7 @@
         <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Cari produk favoritmu...">
 
         <div class="marquee-container">
-            <div class="marquee-text">✈️🚬✈️ MENERIMA SEMUA BARANG JASTIP TERKECUALI BARANG TERLARANG ✈️🚬✈️ &nbsp;&nbsp;&nbsp; ✈️🚬✈️ HARGA DAPAT BERUBAH SEWAKTU WAKTU - PRICES MAY CHANGE AT ANY TIME 🚬&nbsp;&nbsp;&nbsp; 🚬 JIKA ANDA ROKOK YANG ANDA CARI TIDAK ADA DI LIST SILAKAN REQUEST YA BOSSKU!!! ✈️🚬✈️</div>
+            <div class="marquee-text">⚠️ MENERIMA SEMUA BARANG JASTIP TERKECUALI BARANG TERLARANG ⚠️ &nbsp;&nbsp;&nbsp; ⚠️ HARGA DAPAT BERUBAH SEWAKTU WAKTU - PRICES MAY CHANGE AT ANY TIME ⚠️</div>
         </div>
 
         <a href="#" class="btn-telegram-single" onclick="orderTelegramUmum()">
@@ -179,6 +179,42 @@
 
         <div class="menu-container" id="productGrid">
             
+            <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true', 'MKP CAP AYAM 150 ML', '3.500')">
+                <img src="https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true" loading="lazy" alt="MKP CAP AYAM 150 ML">
+                <div class="card-content">
+                    <div class="product-name">MKP CAP AYAM 150 ML </div>
+                    <span class="price-tag">฿ 3.500 min 1 lusin</span>
+                    <span class="price-tag">฿ 3.350 min 5 lusin</span>
+                </div>
+            </div>
+
+            <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true', 'MKP CAP AYAM 40 ML', '1.300')">
+                <img src="https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true" loading="lazy" alt="MKP CAP AYAM 40 ML">
+                <div class="card-content">
+                    <div class="product-name">MKP CAP AYAM 40 ML </div>
+                    <span class="price-tag">฿ 1.300 min 1 lusin</span>
+                    <span class="price-tag">฿ 1.150 min 5 lusin</span>>
+                </div>
+            </div>
+
+            <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true', 'MKP CAP AYAM 25 ML', '1.100')">
+                <img src="https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true" loading="lazy" alt="MKP CAP AYAM 25 ML">
+                <div class="card-content">
+                    <div class="product-name">MKP CAP AYAM 25 ML </div>
+                    <span class="price-tag">฿ 1.100 min 1 lusin</span>
+                    <span class="price-tag">฿ 950 min 5 lusin</span>
+                </div>
+            </div>
+
+            <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true', 'MKP CAP AYAM 12 ML', '800')">
+                <img src="https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/mkp.png?raw=true" loading="lazy" alt="MKP CAP AYAM 12 ML">
+                <div class="card-content">
+                    <div class="product-name">MKP CAP AYAM 12 ML </div>
+                    <span class="price-tag">฿ 800 / lusin </span>
+                    <span class="price-tag">฿ 700 min 5 lusin</span>
+                </div>
+            </div>
+
             <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/sempurna%2012.png?raw=true', 'SAMPOERNA MILD 12', '900')">
                 <img src="https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/sempurna%2012.png?raw=true" loading="lazy" alt="Sampoerna 12">
                 <div class="card-content">
@@ -484,7 +520,7 @@
                 </div>
             </div>
 
-            <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/DJARUM%20CIGARILLOS.png?raw=true', 'DJARUM CIGARILLOS, '900')">
+            <div class="card product-item" onclick="showPopup('https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/DJARUM%20CIGARILLOS.png?raw=true', 'DJARUM CIGARILLOS', '900')">
                 <img src="https://github.com/88xiaowu-dev/-xiaowurokok-/blob/main/DJARUM%20CIGARILLOS.png?raw=true" loading="lazy" alt="DJARUM CIGARILLOS">
                 <div class="card-content">
                     <div class="product-name">DJARUM CIGARILLOS</div>
@@ -1023,5 +1059,3 @@
     </script>
 </body>
 </html>
-
-
